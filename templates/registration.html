@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-News</title>
+    <!-- <link rel="stylesheet" href="./static/index.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='log-in-out.css') }}?v={{ time.time() }}"
+    />
+  </head>
+  <body>
+    {% extends 'base.html' %} {% block content %}
+
+    <div class="div-main">
+      <form action="/registration" method="POST" class="div-log-in-out">
+        <p class="t-font title-log-in-out">Регистрация</p>
+        <input
+          type="text"
+          name="login"
+          class="n-font input-log-in-out"
+          placeholder="Логин"
+        />
+        <input
+          type="password"
+          name="password"
+          class="n-font input-log-in-out"
+          placeholder="Пароль"
+        />
+        <input
+          type="password"
+          name="confirm_password"
+          class="n-font input-log-in-out"
+          placeholder="Повторите пароль"
+        />
+        <div class="div-button-log-in-out">
+          <button type="submit" class="button-log-in-out grey">Войти</button>
+          <button type="submit" class="button-log-in-out yellow">
+            Зарегестрироваться
+          </button>
+        </div>
+      </form>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>

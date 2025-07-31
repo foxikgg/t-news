@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-News</title>
+    <!-- <link rel="stylesheet" href="./static/index.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='my-profile.css') }}?v={{ time.time() }}"
+    />
+  </head>
+  <body>
+    {% extends 'base.html' %} {% block content %}
+
+    <div class="div-main">
+      <div class="div-profile-user-info">
+        <div class="div-present-user-photo">
+          <div class="img-present-user-avatar">
+            <img
+            class="img-user-avatar"
+            src="/static/images/user_avatar/img_user_000000.png"
+            alt=""
+          />
+          </div>
+          <a href="" class="n-font btn-edit-user-avatar">Изменить фото</a>
+        </div>
+        <div class="div-info-user-text">
+          <div class="div-present-user-name">
+            <h1 class="t-font text-present-user-name">Луций Анней Сенека</h1>
+            <div class="svg-edit user-name"></div>
+          </div>
+          <div class="div-present-user-description">
+            <div class="div-text-and-exit-user-description">
+              <h2 class="n-font text-about-me">Описание</h1>
+                <div class="svg-edit user-description"></div>
+            </div>
+            <p class="n-font   text-present-user-description">
+              Hимский философ-стоик, поэт и государственный деятель.
+              Воспитатель Нерона и один из крупнейших представителей стоицизма.
+              Сын Луция (Марка) Аннея Сенеки Старшего (выдающегося ритора и
+              историка) и Гельвии, младший брат Юния Галлиона. Автор
+              «Нравственных писем к Луцилию», ряда философских трактатов и
+              трагедийа
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="div-new-post">
+        <textarea
+          type="text"
+          placeholder="Напишите свой пост"
+          class="n-font input-new-post"
+        ></textarea>
+        <a href="" class="n-font btn-new-post">Отправить</a>
+      </div>
+      <div class="div-all-user-post">
+        <div class="div-user-news">
+          <div class="user-info">
+          <img
+            class="user-avatar"
+            src="/static/images/user_avatar/img_user_000000.png"
+            alt=""
+          />
+          <p class="t-font text-user-name">Луций Анней Сенека</p>
+        </div>
+        <p class="n-font text-news">Бывают заблуждения, имеющие видимость истин</p>
+        <div class="div-news-reaction">
+          <div class="button-reaction-like" data-userid="">
+            <div class="svg-reaction-like"></div>
+            <p class="n-font text-counter-like">4</p>
+          </div>
+          <div class="button-reaction-comment">
+            <p class="n-font text-counter-comment">
+              Комментарии 5
+            </p>
+          </div>
+          <div class="button-delete" data-userid="">
+            <div class="svg-delete"></div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,155 @@
+.t-font {
+  font-family: "Tinkoff Sans", sans-serif;
+}
+
+.n-font {
+  font-family: "Neue Haas Unica", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.div-main {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+
+  padding-top: 114px;
+  margin-bottom: 50px;
+}
+
+.div-news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: #fff;
+  border-radius: 24px;
+  gap: 25px;
+}
+
+.div-news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 24px;
+  justify-content: center;
+  align-items: start;
+
+  background-color: #ffffff;
+  border-radius: 24px;
+  gap: 20px;
+  box-shadow: 0px var(--Hide-from-publishing-Shadow-Medium-Y-axis, 6px)
+    var(--Hide-from-publishing-Shadow-Medium-Blur, 34px) 0px
+    var(--Hide-from-publishing-Shadow-Medium-Color, rgba(0, 0, 0, 0.12));
+}
+
+.div-news-reaction {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.text-user-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: hsla(0, 0%, 0%, 0.8);
+  margin: 0;
+}
+
+.text-news {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: hsla(0, 0%, 0%, 1);
+  margin-bottom: 4px;
+}
+
+.button-reaction-like {
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #FFDD2D;
+}
+
+.button-reaction-comment {
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #F2F4F8;
+}
+
+.svg-reaction-comment {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.svg-reaction-like {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url('/static/images/svg/like.svg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-counter-like {
+  font-size: 15px;
+  color: hsla(0, 0%, 20%, 1);
+}
+
+.text-counter-comment {
+  font-size: 15px;
+  color: #126DF7;
+}
+
+.button-reaction-like:hover {
+  cursor: pointer;
+  background-color: #FFE561;
+}
+.button-reaction-comment:hover {
+  cursor: pointer;
+  background-color: #D5D8DC;
+}
+
+.text-user-name:hover {
+  color: #126DF7;
+  cursor: pointer;
+}

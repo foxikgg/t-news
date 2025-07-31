@@ -1,0 +1,359 @@
+.t-font {
+  font-family: "Tinkoff Sans", sans-serif;
+}
+
+.n-font {
+  font-family: "Neue Haas Unica", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color: #333333;
+}
+
+body {
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.div-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+
+  padding-top: 114px;
+}
+
+/* User Info */
+
+.div-profile-user-info {
+  display: flex;
+  gap: 24px;
+
+  justify-content: center;
+  align-items: start;
+
+}
+
+.div-present-user-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.img-present-user-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 128px;
+  height: 128px;
+  padding: 10px;
+
+  border: 3px solid #b9f435;
+  border-radius: 100px;
+}
+
+.img-user-avatar {
+  width: 118px;
+  height: 118px;
+}
+
+.btn-edit-user-avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+
+  min-height: 32px;
+  padding: 4px 8px;
+  gap: 2px;
+
+  border-radius: 8px;
+  background-color: #428bf9;
+  color: #fff;
+}
+
+.div-info-user-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  gap: 10px;
+}
+
+.div-present-user-name {
+  display: flex;
+
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.svg-edit {
+  display: flex;
+  background: url("/static/images/svg/edit.svg") no-repeat;
+  background-size: cover;
+  background-position: end;
+}
+
+.div-present-user-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.div-text-and-exit-user-description {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.text-present-user-name {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.text-about-me {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.text-present-user-description {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.svg-edit.user-name {
+  display: flex;
+  width: 24px;
+  height: 28px;
+}
+
+.svg-edit.user-description {
+  display: flex;
+  width: 18px;
+  height: 21px;
+}
+
+/* New Post */
+.div-new-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: end;
+
+  gap: 10px;
+}
+
+.input-new-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  vertical-align: top;
+  resize: none;
+
+  min-height: 136px;
+  padding: 16px;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #4e4e4e;
+  background-color: #eff1f4;
+  box-shadow: none;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+.btn-new-post {
+  display: flex;
+  max-width: 100px;
+  min-height: 32px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 13px;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #ffdd2d;
+}
+
+/* Post User */
+.div-user-news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 24px;
+  justify-content: center;
+  align-items: start;
+
+  background-color: #ffffff;
+  border-radius: 24px;
+  gap: 20px;
+  box-shadow: 0px var(--Hide-from-publishing-Shadow-Medium-Y-axis, 6px)
+    var(--Hide-from-publishing-Shadow-Medium-Blur, 34px) 0px
+    var(--Hide-from-publishing-Shadow-Medium-Color, rgba(0, 0, 0, 0.12));
+}
+
+.div-news-reaction {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.text-user-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: hsla(0, 0%, 0%, 0.8);
+  margin: 0;
+}
+
+.text-news {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: hsla(0, 0%, 0%, 1);
+  margin-bottom: 4px;
+}
+
+.button-reaction-like {
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #ffdd2d;
+}
+
+.button-reaction-comment {
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #f2f4f8;
+}
+
+.button-delete {
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #fff;
+  color: #EB5757;
+  border: 2px solid #EB5757;
+}
+
+.svg-reaction-comment {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.svg-reaction-like {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url("/static/images/svg/like.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.svg-delete {
+  width: 20px;
+  height: 20px;
+  background: url("/static/images/svg/delete.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-counter-like {
+  font-size: 15px;
+}
+
+.text-counter-delete {
+  font-size: 15px;
+  color: #EB5757;
+}
+
+.text-counter-comment {
+  font-size: 15px;
+  color: #126df7;
+}
+
+.button-reaction-like:hover {
+  cursor: pointer;
+  background-color: #ffe561;
+}
+.button-reaction-comment:hover {
+  cursor: pointer;
+  background-color: #C6E3EB;
+}
+
+.button-delete:hover {
+  cursor: pointer;
+  background-color: #C6E3EB;
+  /* outline: 3px solid #EB5757; */
+  color: #999;
+  
+}
+
+.text-user-name:hover {
+  color: #126df7;
+  cursor: pointer;
+}

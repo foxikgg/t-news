@@ -1,0 +1,34 @@
+[
+  {
+    "userId": "000000",
+    "userName": "Луций Анней Сенека",
+    "avatar": "/static/images/user_avatar/img_user_000000.png",
+    "newsText": "Человек, которого застеклённые окна защищали от малейшего дуновения, на чьих ногах постоянно менялись мягкие согревающие повязки, у кого в столовой под полом и в стенах всегда работало отопление, подвергается смертельной опасности, даже если его коснётся самый лёгкий ветерок.",
+    "likeCount": 21,
+    "commentCount": 1
+  },
+  {
+    "userId": "000001",
+    "userName": "Мария Петрова",
+    "avatar": "/static/images/user_avatar/img_user_000001.png",
+    "newsText": "Вторая новость о чем-то интересном.",
+    "likeCount": 25,
+    "commentCount": 5
+  },
+  {
+    "userId": "000002",
+    "userName": "Петр Сидоров",
+    "avatar": "/static/images/user_avatar/img_user_000002.png",
+    "newsText": "Третья новость о чем-то необычном.",
+    "likeCount": 10,
+    "commentCount": 2
+  },
+  {
+    "userId": "000003",
+    "userName": "Сидоров",
+    "avatar": "/static/images/user_avatar/img_user_000003.png",
+    "newsText": "OOOOO, вот это новость о <br><br><br><br><br><br><br><br> чем-то необычном.",
+    "likeCount": 10,
+    "commentCount": 2
+  }
+]

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetaBeam</title>
+    <link rel="icon" href="./images/svg/t-logo.ico" sizes="32x32" />
+    <!-- <link rel="stylesheet" href="./static/fonts.css" /> -->
+    <!-- <link rel="stylesheet" href="./static/header.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='fonts.css') }}?v={{ time.time() }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='header.css') }}?v={{ time.time() }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="div-header">
+        <div class="header-start">
+          <a href="/"><img
+            class="logo-header"
+            src="/static/images/svg/t-logo.svg"
+            alt="Logotoip of T-Bank" aria-hidden="true"
+          /></a>
+          <input class="n-font div-search" placeholder="Поиск по T-News">
+        </div>
+
+        <div class="header-end">
+          <a href="/registration" class="header-button-log-in-out">
+            <p class="n-font text-log-in-out">Зарегестрироваться</p>
+            <div class="svg-log-in-out login" aria-hidden="true"> </div>
+          </a>
+          <a href="/login" class="header-button-log-in-out">
+            <p class="n-font text-log-in-out">Войти</p>
+            <div class="svg-log-in-out login" aria-hidden="true"> </div>
+            <!-- <img class="svg-log-in-out" src="/static/images/svg/login.svg" aria-hidden="true"/> -->
+          </a>
+          <a href="/" class="header-button-log-in-out">
+            <p class="n-font text-log-in-out">Выйти</p>
+            <div class="svg-log-in-out logout" aria-hidden="true"> </div>
+            <!-- <img class="svg-log-in-out" src="/static/images/svg/logout.svg" aria-hidden="true"/> -->
+          </a>
+          <a href="/my-profile" class="svg-profile" aria-hidden="true"> </a>
+          
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
